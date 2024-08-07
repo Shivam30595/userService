@@ -7,7 +7,6 @@ const app = express();
 const startServer = async() => {
     try {
         const port = process.env.PORT || 9090;
-        throw("Ann error occured")
         await dbConnect();
         app.listen(port, ()=>{
             console.log(`User application server is running on ${port}`)
